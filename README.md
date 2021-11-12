@@ -17,3 +17,13 @@ client.searchForNotes('test', dict(limit=2, ancestorNoteId='yXqOlXJrvIvK'))
 ```
 
 Note: Requires Trilium v0.48+
+
+# Running the Tests
+
+To run the tests, docker and docker-compose needs to be installed locally and calling docker should be possible without sudo.
+
+```
+$ poetry install
+$ poetry shell
+$ pytest --cov=trilium_client
+```
