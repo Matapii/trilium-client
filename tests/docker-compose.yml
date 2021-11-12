@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  trilium:
+    image: zadam/trilium
+    restart: unless-stopped
+    environment:
+      - TRILIUM_DATA_DIR=/data
+    ports:
+      - 8080:8080
+    volumes:
+      - ../res/test:/data

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "trilium-client"
+version = "0.1.0"
+description = "Python Client for Trilium"
+authors = ["Matapii <46297405+Matapii@users.noreply.github.com>"]
+license = "AGPLv3+"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+jupyterlab = "^3.2.2"
+pytest = "^6.2.5"
+coverage = "^6.1.2"
+pytest-cov = "^3.0.0"
+pytest-docker = "^0.10.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
